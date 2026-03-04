@@ -1,63 +1,97 @@
+/* VARIABLES GLOBALES */
 :root {
     --primary: #0d6efd;
+    --primary-dark: #004bb5;
     --dark: #1e1e1e;
     --light: #f8f9fa;
-    --font: 'Poppins', sans-serif;
+    --gray-medium: #6c757d;
+    --font-main: 'Poppins', sans-serif;
+    --transition-fast: 0.3s ease;
 }
 
+/* RESET Y ESTILOS GENERALES */
 body {
-    font-family: var(--font);
+    font-family: var(--font-main);
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
+    background-color: #fff;
+    scroll-behavior: smooth;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
                 url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920');
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    background-attachment: fixed;
+    height: 85vh;
 }
 
-/* Títulos Homogéneos */
-.section-header {
+/* TÍTULOS DE SECCIÓN */
+.section-title {
     font-weight: 700;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 3rem;
+    padding-bottom: 0.8rem;
     display: inline-block;
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 5px solid var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-/* Feature Cards */
+/* CARDS Y CONTENEDORES */
 .feature-card {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transition-fast);
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-.hover-up:hover {
-    transform: scale(1.05);
-    background-color: var(--light);
-    transition: 0.3s;
+.card {
+    border-radius: 15px;
 }
 
-/* Animaciones */
+/* FORMULARIO */
+.form-control, .form-select {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: var(--transition-fast);
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* MAPA */
+.map-box {
+    border: 8px solid white;
+}
+
+.map-box iframe {
+    filter: grayscale(10%) contrast(110%);
+}
+
+/* ANIMACIONES */
 .animate-fade-in {
-    animation: fadeIn 1.5s ease;
+    animation: fadeIn 1.5s ease-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-footer {
-    border-top: 4px solid var(--primary);
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .hero-section { height: 70vh; }
+    .display-1 { font-size: 3rem; }
 }
