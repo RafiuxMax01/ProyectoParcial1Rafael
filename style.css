@@ -1,0 +1,63 @@
+:root {
+    --primary: #0d6efd;
+    --dark: #1e1e1e;
+    --light: #f8f9fa;
+    --font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+/* Títulos Homogéneos */
+.section-header {
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: 4px solid var(--primary);
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.hover-up:hover {
+    transform: scale(1.05);
+    background-color: var(--light);
+    transition: 0.3s;
+}
+
+/* Animaciones */
+.animate-fade-in {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    border-top: 4px solid var(--primary);
+}

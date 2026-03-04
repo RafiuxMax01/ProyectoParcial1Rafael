@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web & Cloud - Rafit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">UAA <span class="text-primary"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#apis">Tecnologías API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#microservicios">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desarrollo">Desarrollo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contenedores">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nube">Nube</a></li>
+                    <li class="nav-item"><a class="nav-link ms-lg-3 btn btn-primary text-white px-4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center d-flex align-items-center text-white">
+        <div class="container">
+            <h1 class="display-2 fw-bold animate-fade-in">Proyecto Integrador Parcial 1</h1>
+            <p class="lead opacity-75">Presenta: Rafael Alberto Carrillo Lima</p>
+            <div class="mt-4">
+                <a href="#apis" class="btn btn-primary btn-lg rounded-pill px-5 me-2">Explorar Temas</a>
+                <button class="btn btn-outline-light btn-lg rounded-pill px-5" data-bs-toggle="modal" data-bs-target="#jwtModal">Seguridad JWT</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="apis" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-header">1. Tecnologías de Web APIs</h2>
+                    <p>Las APIs son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos . Actúan como una capa intermedia que procesa transferencias de datos , permitiendo abrir funcionalidades a desarrolladores externos y socios .</p>
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-3">
+                                <i class="bi bi-google text-primary h3"></i>
+                                <h6>Google Ecosystem</h6>
+                                <p class="small text-muted mb-0">Búsqueda, Gmail y Maps .</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-3">
+                                <i class="bi bi-credit-card text-primary h3"></i>
+                                <h6>Servicios Globales</h6>
+                                <p class="small text-muted mb-0">PayPal y WhatsApp Business .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800" class="img-fluid rounded-4 shadow" alt="API Tech">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="microservicios" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-header mx-auto">2. Microservicios</h2>
+            <p class="mb-5 mx-auto" style="max-width: 800px;">Arquitectura que descompone aplicaciones en servicios aislados, facilitando el despliegue y la escalabilidad independiente .</p>
+            
+            
+
+
+
+            
+            <div class="row mt-5 g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-box-seam display-4 text-primary"></i>
+                        <h5 class="mt-3">Modularidad</h5>
+                        <p class="small">Cada servicio resuelve un problema específico .</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge display-4 text-primary"></i>
+                        <h5 class="mt-3">Agilidad</h5>
+                        <p class="small">Despliegue rápido en entornos de nube .</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-gear-wide-connected display-4 text-primary"></i>
+                        <h5 class="mt-3">Integración</h5>
+                        <p class="small">Comunicación fluida vía protocolos definidos .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="desarrollo" class="py-5">
+        <div class="container">
+            <h2 class="section-header">3. Desarrollo de una Web API</h2>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="accordion shadow-sm" id="apiSteps">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+                                    Diseño y Estándares
+                                </button>
+                            </h2>
+                            <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#apiSteps">
+                                <div class="accordion-body">
+                                    Se deben seguir estándares de la industria como <strong>REST</strong> y formatos <strong>JSON/XML</strong> . Definir endpoints claros es vital para la interacción .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+                                    Seguridad y Documentación
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#apiSteps">
+                                <div class="accordion-body">
+                                    Implementar autenticación y autorización es crucial . Herramientas como Swagger o Postman facilitan que otros entiendan cómo usarla .
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="ratio ratio-16x9 rounded shadow overflow-hidden mt-4 mt-lg-0">
+                        <iframe src="https://www.youtube.com/embed/u2Ms34GE14U" title="API Support" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenedores" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-header text-white">4. Manejo de Contenedores</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Un contenedor empaqueta la aplicación con sus dependencias para que funcione igual en cualquier entorno . Comparte el SO del host, lo que lo hace ligero y eficiente .</p>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover border-secondary">
+                            <thead>
+                                <tr><th>Docker</th><th>Kubernetes</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Crea y ejecuta contenedores </td><td>Orquesta múltiples contenedores </td></tr>
+                                <tr><td>Desarrollo y pruebas </td><td>Producción a gran escala </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nube" class="py-5">
+        <div class="container">
+            <h2 class="section-header text-center mx-auto">5. Desarrollo de Aplicaciones para la Nube</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm hover-up">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" height="40" alt="AWS" class="mb-3">
+                        <p class="small">Infraestructura escalable y robusta .</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm hover-up">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" height="40" alt="Azure" class="mb-3">
+                        <p class="small">Integración y despliegue continuo (CI/CD) .</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm hover-up">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" height="40" alt="GCP" class="mb-3">
+                        <p class="small">Líder en servicios de contenedores y datos .</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h4 class="text-center mb-3">Sede Académica (UAA)</h4>
+                <div class="map-box shadow rounded overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.17183226243!2d-102.3168128241951!3d21.912530479155793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef94957e873b%3A0x8f2d572d4b8e617d!2sUniversidad%20Aut%C3%B3noma%20de%20Aguascalientes!5e0!3m2!1ses-419!2smx!4v1710000000000!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card p-5 border-0 shadow rounded-4">
+                        <h3 class="text-center fw-bold mb-4">Registro de Proyecto</h3>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre del Estudiante</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Formato de correo incorrecto.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tema Principal</label>
+                                <select class="form-select" id="topic" required>
+                                    <option value="">Selecciona...</option>
+                                    <option>Web APIs</option>
+                                    <option>Contenedores</option>
+                                    <option>Nube</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona una opción.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Prioridad (1-5)</label>
+                                <input type="number" class="form-control" min="1" max="5" id="priority" required>
+                                <div class="invalid-feedback">Valor entre 1 y 5.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Descripción</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                                <div class="invalid-feedback">Escribe el motivo del registro.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">Enviar Información</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="jwtModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">Protocolo de Seguridad JWT</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <p>JSON Web Token (JWT) es el estándar (RFC 7519) para transmitir información segura entre partes .</p>
+                    <p><strong>Estructura:</strong> <code>header.payload.signature</code> .</p>
+                    <ul>
+                        <li><strong>Header:</strong> Algoritmo y tipo de token .</li>
+                        <li><strong>Payload:</strong> Información del usuario (Claims) .</li>
+                        <li><strong>Signature:</strong> Garantiza que el token no fue alterado .</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-1 fw-bold">Universidad Autónoma de Aguascalientes</p>
+        <p class="mb-0 small opacity-50">Desarrollado por Rafael Alberto Carrillo Lima (Rafit) - 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
